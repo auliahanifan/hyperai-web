@@ -7,7 +7,7 @@ export const AuthPage = (props: AuthPageProps) => {
   return (
     <AuthPageBase
       {...props}
-      title={"HyperAI"}
+      title={"Riset AI"}
       formProps={{
         defaultValues: { email: "demo@refine.dev", password: "demodemo" },
       }}

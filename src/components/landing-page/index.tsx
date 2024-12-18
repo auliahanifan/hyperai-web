@@ -9,7 +9,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+// import Image from "next/image";
 import { useRef } from "react";
 
 const LandingPage = () => {
@@ -25,13 +25,26 @@ const LandingPage = () => {
     <Box sx={{ minHeight: "100vh", bgcolor: "#ffffff" }}>
       <AppBar position="sticky" sx={{ bgcolor: "#ffffff" }} elevation={1}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Image
+          {/* <Image
             src="/logo.png"
             alt="HyperAI Logo"
             width={80}
             height={80}
             priority
-          />
+          /> */}
+          <Typography
+            id="LogoTitle"
+            variant="h6"
+            component="h1"
+            gutterBottom
+            sx={{
+              color: "#000000",
+              fontFamily: "Faustina",
+              fontWeight: "bold",
+            }}
+          >
+            Riset AI
+          </Typography>
 
           <Box sx={{ display: "flex", gap: 2 }}>
             <Button
@@ -44,7 +57,7 @@ const LandingPage = () => {
               Get Started
             </Button> */}
             <Button variant="contained" onClick={() => router.push("/login")}>
-              Login/Signup
+              Login/Signup (Coming Soon)
             </Button>
           </Box>
         </Toolbar>
@@ -73,7 +86,7 @@ const LandingPage = () => {
               onClick={() => router.push("/login")}
               sx={{ mt: 2 }}
             >
-              Mulai
+              Mulai (Coming Soon)
             </Button>
           </Grid>
         </Grid>
@@ -89,7 +102,7 @@ const LandingPage = () => {
                 gutterBottom
                 sx={{ color: "#000000" }}
               >
-                Key Features
+                Fitur Utama
               </Typography>
             </Grid>
             {features.map((feature, index) => (
@@ -133,7 +146,7 @@ const LandingPage = () => {
             onClick={() => router.push("/login")}
             sx={{ mt: 2 }}
           >
-            Mulai
+            Mulai (Coming Soon)
           </Button>
         </Box>
       </Container>
@@ -143,19 +156,19 @@ const LandingPage = () => {
 
 const features = [
   {
-    title: "Smart Analysis",
+    title: "Workflow Interaktif",
     description:
-      "Advanced AI algorithms analyze research papers and data to provide meaningful insights.",
+      "Dengan workflow Riset AI yang interaktif, kamu dipandu untuk membuat riset berkualitas",
   },
   {
-    title: "Time Saving",
+    title: "Sumber Ilmiah",
     description:
-      "Automate repetitive research tasks and focus on what matters most.",
+      "Tidak seperti ChatGPT, data yang kami sajikan berdasarkan paper ilmiah",
   },
   {
-    title: "Comprehensive Search",
+    title: "Hasil Berintegritas",
     description:
-      "Access and search through millions of research papers and datasets instantly.",
+      "Semua karyamu yang ditulis melalui Riset AI dipastikan bebas plagiarisme dan lolos AI-checker.",
   },
 ];
 

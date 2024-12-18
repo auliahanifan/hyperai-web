@@ -12,9 +12,9 @@ import { authProvider } from "@providers/auth-provider";
 import { dataProvider } from "@providers/data-provider";
 
 export const metadata: Metadata = {
-  title: "HyperAI | AI Research Assistant",
+  title: "Riset AI | Asisten Riset Kamu",
   description:
-    "HyperAI adalah asisten AI yang diciptakan untuk memudahkan mahasiswa dan peneliti dalam membuat penelitian yang berkualitas",
+    "Riset AI adalah asisten AI yang diciptakan untuk memudahkan mahasiswa dan peneliti dalam membuat penelitian yang berkualitas",
   icons: {
     icon: "/favicon.ico",
   },
